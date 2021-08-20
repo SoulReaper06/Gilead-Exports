@@ -8,10 +8,6 @@
   <!--========================================= UNICONS ===============================================-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-  <!--========================================= BOOTSTRAP CSS ===============================================-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-
 <!--========================================= SWIPER CSS ===============================================-->
 <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
@@ -23,55 +19,60 @@
 </head>
 <body>
   <!--========================= HEADER / NAVBAR =============================-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#home">
-        <img src="img/icon.png" alt="" width="30" height="24" class="d-inline-block align-text-top navbar__name-icon">
-        Gilead Exports
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutus">About Us</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Product
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <img src="img/icon.png" alt="company" class="nav__img-logo">
+        <a href="#" class="nav__log">
+            Gilead Exports
+        </a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">
+                        <i class="uil uil-home nav__icon"></i>Home
+                    </a>
+                </li> 
 
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutus">Gallery</a>
-          </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">
+                        <i class="uil uil-user-square nav__icon"></i>About Us 
+                    </a>
+                </li> 
 
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutus">Contact Us</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">
+                        <i class="uil uil-brain nav__icon"></i>Products
+                    </a>
+                </li> 
+
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">
+                        <i class="uil uil-suitcase nav__icon"></i>Gallery 
+                    </a>
+                </li> 
+
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class="uil uil-scenery nav__icon"></i>Contact Us
+                    </a>
+                </li> 
+            <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
+            </div>
+        </div>               
+    </nav>
+    
+</header>
+<main class="main">
 
   <div class="home__container swiper-container mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide ">
-        <img src="img/home1.JPG" alt="" class="slideshow__img">
+        <img src="img/home1.jpg" alt="" class="slideshow__img">
       </div>
       <div class="swiper-slide">
         <img src="img/home2.jpg" alt="" class="slideshow__img">
@@ -90,7 +91,7 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>
   </div>
-<br> <br>
+<br> <br> <br><br>
   <section class="home__data">
     <h2 class="section__title">
       GILEAD EXPORTS
@@ -98,47 +99,166 @@
     <span class="section__subtitle">
       "Discover your natural beauty with our natural products"
     </span> 
-    <div class="container grid home__content">
+    <section class="about section" id="about">
       
-      <div class="home__description">
-        <p class="home__details">
-          We GILEAD EXPORTS is Leading Manufacturers and Exporters of High Quality Herbs ,Herbal Hair  Colors like Natural Henna Powder , Indigo powder,Amla powder,Reeta powder,Shikakai powder,Soapnut powder,Natural hair colors & Beauty products etc.. in all over World . We are number one Exporters  in the world market since a long time. We have many years experience in this field.  Please find attached our 100% Natural Hair colors for your reference.
-        </p>
+      <div class="about__container container grid">
+        <img src="img/icon.png" alt="" class="about__img">
 
-        <div class="about__info">
-          <div>
-            <span class="about__info-title">08+</span>
-            <span class="about__info-name">Years <br> experience</span>
-          </div>
-
-          <div>
-            <span class="about__info-title">08+</span>
-            <span class="about__info-name">Years <br> experience</span>
-          </div>
-
-          <div>
-            <span class="about__info-title">08+</span>
-            <span class="about__info-name">Years <br> experience</span>
-          </div>
-
-          <div class="contact-us__button">
-            <a href="" class="button button--flex">
-              Contact Us <i class="uil uil-phone button__icon"></i>
-            </a>
+        <div class="about__data">
+          <p class="about__description">
+            We GILEAD EXPORTS is Leading Manufacturers and Exporters of High Quality Herbs ,Herbal Hair  Colors like Natural Henna Powder , Indigo powder,Amla powder,Reeta powder,Shikakai powder,Soapnut powder,Natural hair colors & Beauty products etc.. in all over World . We are number one Exporters  in the world market since a long time. We have many years experience in this field.  Please find attached our 100% Natural Hair colors for your reference.
+          </p>
+  
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">08+</span>
+              <span class="about__info-name">Years</span>
+            </div>
+  
+            <div>
+              <span class="about__info-title">08+</span>
+              <span class="about__info-name">Countries</span>
+            </div>
+  
+            <div>
+              <span class="about__info-title">08+</span>
+              <span class="about__info-name">Products</span>
+            </div>
+  
+            <!-- <div class="contact-us__button">
+              <a href="" class="button button--flex">
+                Contact Us <i class="uil uil-phone button__icon"></i>
+              </a>
+            </div> -->
           </div>
         </div>
+
       </div>
       
-    </div>
+</section> <br><br>
 
-    
+<section class="about-us">
+  <h2 class="section__title">
+    ABOUT US
+  </h2>
 
+  <div class="container grid about-us__details">
+      <div class="aboutus__main">
+        <p class="aboutus__box">
+          We are Major suppliers to many Esteemed Global Organisations engaged in Manufacturing :- Cosmeceuticals , Haircare, Ayurvedic – Health & Beauty, Herbal Extracts, Nutraceuticals, Aroma & Incense, R & D Laboratories, Supplementary Foods, Healthcare & Food Products.  <br> <br>
+
+                We have great experiences in the Overseas  Market & provide our valuable customers with deep satisfaction. <br><br>
+        </p>
+      </div>
+  </div>
+
+   <!--==================== PRODUCT LIST ====================-->
+
+    <section class="product__list" id="portfolio">
+      <h3 class="section__title">Our  Products</h3>
+          <span class="section__subtitle">100% Natural Products</span>  
+      
+
+      <div class="portfolio__container container swiper-container mySwiper">
+          <div class="swiper-wrapper">
+              <!--==================== PORTFOLIO 1 ====================-->
+              <div class="portfolio__content grid swiper-slide">
+                  <img src="img/henna_powder.jpg" alt="" class="portfolio__img">
+
+                  <div class="portfolio__data">
+                      <h3 class="portfolio__title">Natural Henna Powder (lawsonia inermis)</h3>
+                      <a href="#" class="button button--flex button--small portfolio__button">
+                          Learn More
+                          <i class="uil uil-arrow-right button__icon"></i>
+                      </a>
+                  </div>
+              </div>
+
+               <!--==================== PORTFOLIO 2 ====================-->
+               <div class="portfolio__content grid swiper-slide">
+                  <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                  <div class="portfolio__data">
+                      <h3 class="portfolio__title">Modern Website</h3>
+                      <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
+                      <a href="#" class="button button--flex button--small portfolio__button">
+                          Demo
+                          <i class="uil uil-arrow-right button__icon"></i>
+                      </a>
+                  </div>
+              </div>
+
+               <!--==================== PORTFOLIO 3 ====================-->
+               <div class="portfolio__content grid swiper-slide">
+                  <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                  <div class="portfolio__data">
+                      <h3 class="portfolio__title">Modern Website</h3>
+                      <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
+                      <a href="#" class="button button--flex button--small portfolio__button">
+                          Demo
+                          <i class="uil uil-arrow-right button__icon"></i>
+                      </a>
+                  </div>
+              </div>
+
+
+
+              <div class="portfolio__content grid swiper-slide">
+                <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Modern Website</h3>
+                    <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions.</p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+
+          </div>
+
+          <!-- Add Arrows -->
+          <div class="swiper-button-next">
+              <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+              <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+
+      </div>
   </section>
 
+    <ol>
+      <li>Natural Henna Powder (lawsonia inermis)</li>
+      <li>Neutral Henna Powder(Casia obovata)</li>
+      <li>Indigo Powder (Woad tinctoria)</li>
+      <li>Amla Powder(Emblica officinalis))</li>
+      <li>Shikakai Powder (Acacia concinna)</li>
+      <li>Reeta Powder(Sapindus mukorossi)</li>
+      <li>Madder root Powder(rubia tinctoria)</li>
+      <li>Neem Powder(Azadirachta indica)</li>
+      <li>Turmeric Powder(Curcuma longa)</li>
+      <li>Bhringraj Powder(False daisy)</li>
+      <li>Hibiscus flower powder(Hibiscus Rosa Sinensis)</li>
+      <li>Soapnut(Sapindus mukorossi)</li>
+      <li>Tulsi Powder(Ocimum Sanctum)</li>
+      <li>Pineapple Powder((Ananas comosus)</li>
+    
+    </ol>
+  </div>
   
 
- <!--==================== BOOTSTRAP JS =================-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</section>
+
+
+</main>
+  
 
 <!--==================== SWIPER JS =================-->
 <script src="js/swiper-bundle.min.js"></script>
