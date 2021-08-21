@@ -1,7 +1,7 @@
 
 /*==================== SLIDESHOW ====================*/
 
-var swiper = new Swiper(".home__container", {
+var swiper1 = new Swiper(".home__container", {
   cssMode: true,
   loop: true,
   
@@ -16,7 +16,7 @@ var swiper = new Swiper(".home__container", {
 });
 
 
-var swiper = new Swiper(".portfolio__container", {
+var swiper2 = new Swiper(".portfolio__container", {
   cssMode: true,
   loop: true,
   
@@ -67,3 +67,12 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 // 10/10/2016
 // https://codepen.io/anon/pen/qaoxyA  
 // https://codepen.io/Em-An/pen/LRdjwp  
+
+
+function scrollHeader() {
+  const nav = document.getElementById('header')
+
+  if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+}
+
+window.addEventListener('scroll', scrollHeader)
